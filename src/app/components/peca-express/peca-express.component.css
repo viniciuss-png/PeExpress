@@ -11,23 +11,38 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background-color: #fff;
 }
 
-nav ul {
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    flex: 1;
+}
+
+.menu ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centraliza os itens do menu */
     gap: 20px;
 }
 
-nav ul li a {
+.menu ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
 }
 
 .icons a img {
@@ -38,7 +53,7 @@ nav ul li a {
 .hero {
     position: relative;
     height: 80vh;
-    /*background-image: url('');*/
+    /* background-image: url(''); */
     background-size: cover;
     background-position: center;
     display: flex;
